@@ -19,19 +19,19 @@ Example — Reconstruction
 
 Original:
 
-"original" (showcase/example1/original.jpg)
+![original] (showcase/example1/original.jpg)
 
 Corrupted:
 
-"corrupted" (showcase/example1/corrupted.jpg)
+![corrupted] (showcase/example1/corrupted.jpg)
 
 Reconstructed:
 
-"reconstructed" (showcase/example1/reconstructed.jpg)
+![reconstructed] (showcase/example1/reconstructed.jpg)
 
 Diff:
 
-"diff" (showcase/example1/diff.jpg)
+![diff] (showcase/example1/diff.jpg)
 
 ---
 
