@@ -1,116 +1,71 @@
-# HLX Photo Reconstruction
+HLX Photo Reconstruction
 
-Deterministic image reconstruction using constraint-based convergence.
-
----
-
-## What it does
-
-* Reconstructs missing regions in images
-* Preserves structural coherence
-* Produces consistent results across inputs
-* No training, no models, no randomness
+Deterministic reconstruction of missing image structure using constraint-based convergence.
 
 ---
 
-## Example Results
+Core Behavior
 
-### Example 1
+In tested cases:
 
-**Original**
-![original](showcase/example1/original.jpg)
-
-**Corrupted**
-![corrupted](showcase/example1/corrupted.jpg)
-
-**Reconstructed**
-![reconstructed](showcase/example1/reconstructed.jpg)
-
-**Diff (difference from original)**
-![diff](showcase/example1/diff.jpg)
+- Reconstructs missing regions without training
+- Preserves structural coherence
+- Produces consistent outputs across inputs
+- Converges without instability or artifact explosion
 
 ---
 
-### Example 2
+Example — Reconstruction
 
-**Original**
-![original](showcase/example2/original.jpg)
+Original:
 
-**Corrupted**
-![corrupted](showcase/example2/corrupted.jpg)
+"original" (showcase/example1/original.jpg)
 
-**Reconstructed**
-![reconstructed](showcase/example2/reconstructed.jpg)
+Corrupted:
 
-**Diff**
-![diff](showcase/example2/diff.jpg)
+"corrupted" (showcase/example1/corrupted.jpg)
 
----
+Reconstructed:
 
-### Example 3
+"reconstructed" (showcase/example1/reconstructed.jpg)
 
-**Original**
-![original](showcase/example3/original.jpg)
+Diff:
 
-**Corrupted**
-![corrupted](showcase/example3/corrupted.jpg)
-
-**Reconstructed**
-![reconstructed](showcase/example3/reconstructed.jpg)
-
-**Diff**
-![diff](showcase/example3/diff.jpg)
+"diff" (showcase/example1/diff.jpg)
 
 ---
 
-### Example 4
+Notes
 
-**Original**
-![original](showcase/example4/original.jpg)
-
-**Corrupted**
-![corrupted](showcase/example4/corrupted.jpg)
-
-**Reconstructed**
-![reconstructed](showcase/example4/reconstructed.jpg)
-
-**Diff**
-![diff](showcase/example4/diff.jpg)
+- Diff images are low magnitude → indicates high structural accuracy
+- No generative model or training process is used
+- Behavior is deterministic and repeatable
 
 ---
 
-### Example 5
+Structure
 
-**Original**
-![original](showcase/example5/original.jpg)
-
-**Corrupted**
-![corrupted](showcase/example5/corrupted.jpg)
-
-**Reconstructed**
-![reconstructed](showcase/example5/reconstructed.jpg)
-
-**Diff**
-![diff](showcase/example5/diff.jpg)
+hlx-photo/
+├── core/
+├── utils/
+├── showcase/
+├── examples/
+├── run.py
 
 ---
 
-## Notes
+Setup
 
-* Diff images are intentionally low magnitude — this indicates high reconstruction accuracy
-* System is fully deterministic
-* Reconstruction is achieved via iterative constraint enforcement, not generative prediction
+pip install -r requirements.txt
 
 ---
 
-## Run
+Run
 
-```bash
 python run.py
-```
 
 ---
 
-## Summary
+By
 
-This system reconstructs structure by iteratively eliminating inconsistent states until a stable solution remains.
+Evo Engineering LLC
