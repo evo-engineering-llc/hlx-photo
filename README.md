@@ -1,3 +1,10 @@
+# HLX Photo Reconstruction
+
+Part of **Evo Engineering**  
+https://www.evo.engineering/
+
+Deterministic image reconstruction using constraint-based convergence.
+No training. No generative models.
 HLX Photo Reconstruction
 
 Deterministic reconstruction of missing image structure using constraint-based convergence.
