@@ -1,28 +1,22 @@
 # HLX Photo Reconstruction
 
+Recover missing image structure without training or generative models.
+
 Part of **Evo Engineering**  
 https://www.evo.engineering/
 
-Deterministic image reconstruction using constraint-based convergence.
-No training. No generative models.
-HLX Photo Reconstruction
-
-Deterministic reconstruction of missing image structure using constraint-based convergence.
-
 ---
 
-Core Behavior
-
-In tested cases:
+## ⚡ Core Behavior
 
 - Reconstructs missing regions without training
 - Preserves structural coherence
 - Produces consistent outputs across inputs
-- Converges without instability or artifact explosion
+- Deterministic and repeatable (no stochastic variation)
 
 ---
 
-Example — Reconstruction
+## 🔥 Example — Reconstruction
 
 Original:
 
@@ -42,15 +36,31 @@ Diff:
 
 ---
 
-Notes
+## 🧠 What This Does
 
-- Diff images are low magnitude → indicates high structural accuracy
-- No generative model or training process is used
-- Behavior is deterministic and repeatable
+HLX Photo reconstructs missing image structure using constraint-based convergence.
+
+Instead of generating pixels, it restores structure directly.
+
+In tested cases:
+
+- Maintains global coherence across missing regions
+- Avoids artifact amplification
+- Converges reliably without instability
 
 ---
 
-Structure
+## 📊 Notes
+
+- Diff images are low magnitude → high structural accuracy
+- No training process or model fitting is required
+- Behavior is deterministic and reproducible
+
+---
+
+## 📁 Structure
+
+```
 
 hlx-photo/
 ├── core/
@@ -59,20 +69,28 @@ hlx-photo/
 ├── examples/
 ├── run.py
 
+````
+
 ---
 
-Setup
+## ⚙️ Setup
 
+```bash
 pip install -r requirements.txt
+````
 
 ---
 
-Run
+## ▶️ Run
 
+```bash
 python run.py
+```
 
 ---
 
-By
+## By
 
 Evo Engineering LLC
+
+```
